@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabores del Mundo</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurante Sabores del Mundo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#orden">Ordenar</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Menú</h2>
+            <div class="menu-section">
+                <h3>Entradas</h3>
+                <ul>
+                    <li>Bruschetta Clásica - $5.00</li>
+                    <li>Ceviche de Pescado - $8.00</li>
+                    <li>Empanadas Argentinas - $6.00</li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Platos Principales</h3>
+                <ul>
+                    <li>Paella Española - $15.00</li>
+                    <li>Sushi Variado - $12.00</li>
+                    <li>Tacos Mexicanos - $10.00</li>
+                    <li>Bife de Chorizo - $18.00</li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Postres</h3>
+                <ul>
+                    <li>Tiramisú - $6.00</li>
+                    <li>Flan de Caramelo - $5.00</li>
+                    <li>Helado Artesanal - $4.00</li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Bebidas</h3>
+                <ul>
+                    <li>Vino de la Casa - $7.00</li>
+                    <li>Cerveza Artesanal - $5.00</li>
+                    <li>Jugo Natural - $3.00</li>
+                </ul>
+            </div>
+        </section>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en el corazón de la ciudad:</p>
+            <p><strong>Dirección:</strong> 1234 Calle Principal, Ciudad, País</p>
+        </section>
+        <section id="orden">
+            <h2>Ordenar</h2>
+            <form id="orderForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <label for="pedido">Pedido:</label>
+                <textarea id="pedido" name="pedido" required></textarea>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+            <div id="orderResult"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurante Sabores del Mundo</p>
+    </footer>
+    <script src="prueba.js"></script>
+</body>
+</html>
